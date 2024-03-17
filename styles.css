@@ -4,6 +4,7 @@ body {
     padding: 0;
     background-color: #78A083; /* Postavljamo svijetlu pozadinu na cijeli body */
     color: #000; /* Postavljamo tamniji tekst na svijetloj pozadini */
+    transition: background-color 0.3s ease; /* Dodajemo animaciju za promjenu boje pozadine */
 }
 
 .container {
@@ -28,6 +29,7 @@ li {
     border-radius: 5px;
     overflow: hidden;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease; /* Dodajemo animaciju za promjenu boje pozadine */
 }
 
 li a {
@@ -35,11 +37,10 @@ li a {
     padding: 15px;
     color: #000;
     text-decoration: none;
-    transition: background-color 0.3s ease;
 }
 
-li a:hover {
-    background-color: #555; /* Tamnija pozadina na hover */
+li:hover {
+    background-color: #3B5960; /* Tamnija pozadina na hover */
 }
 
 /* Stilizacija za dark mode */
@@ -76,14 +77,9 @@ li a:hover {
     cursor: pointer;
     color: #000;
     z-index: 1000;
+    transition: color 0.3s ease; /* Dodajemo animaciju za promjenu boje teksta */
 }
 
 .dark-mode-toggle:hover {
     color: #666;
-}
-
-.dark-mode-icon {
-    display: inline-block;
-    width: 20px;
-    height: 20px;
 }
