@@ -41,3 +41,25 @@ h1 {
     color: #ddd; /* Sivo slova */
     text-decoration: none; /* Isključujemo podvučenu liniju */
 }
+
+/* Ostali stilovi */
+footer {
+    text-align: center;
+    margin-top: 50px; /* Povećavamo razmak između programa i dugmeta */
+}
+
+#chat-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50; /* Zelena boja */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+
+#chat-button:hover {
+    background-color: #45a049; /* Tamnija nijansa zelene boje na hover */
+}
