@@ -1,10 +1,9 @@
 body {
+    background-image: url("./cool-backgrounds-hd-vector-pack-deals-bypeople-featured.jpg");
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #78A083; /* Postavljamo svijetlu pozadinu na cijeli body */
-    color: #000; /* Postavljamo tamniji tekst na svijetloj pozadini */
-    transition: background-color 0.3s ease; /* Dodajemo animaciju za promjenu boje pozadine */
+    background-size: cover; /* Da bi slika pokrivala cijeli ekran */
+    background-position: center; /* Centriranje slike */
+    background-attachment: fixed; /* Fiksiranje pozadine */
 }
 
 .container {
@@ -15,71 +14,30 @@ body {
 
 h1 {
     text-align: center;
-    color: #000; /* Promijenjena boja teksta */
+    color: #fff; /* Bijeli naslov */
 }
 
-ul {
-    list-style-type: none;
-    padding: 0;
+#program-list {
+    text-align: center;
 }
 
-li {
-    margin-bottom: 10px;
-    background-color: #50727B; /* Tamnija pozadina za stavke liste */
-    border-radius: 5px;
-    overflow: hidden;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s ease; /* Dodajemo animaciju za promjenu boje pozadine */
+.link-box {
+    display: inline-block;
+    margin: 10px;
+    padding: 20px;
+    border: 2px solid #4a69bd; /* Tamnoplava granica */
+    border-radius: 10px;
+    background-color: #485460; /* Tamnoplava pozadina */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sjenka */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Animacija promjene boje pozadine i transformacije */
 }
 
-li a {
-    display: block;
-    padding: 15px;
-    color: #000;
-    text-decoration: none;
+.link-box:hover {
+    background-color: #4a69bd; /* Tamnoplava pozadina na hover */
+    transform: translateY(-3px); /* Pomjeramo link nagore */
 }
 
-li:hover {
-    background-color: #3B5960; /* Tamnija pozadina na hover */
-}
-
-/* Stilizacija za dark mode */
-.dark-mode {
-    background-color: #222; /* Tamna pozadina za cijelu stranicu */
-    color: #fff; /* Svijetli tekst na tamnoj pozadini */
-}
-
-.dark-mode ul li {
-    border-color: #111; /* Tamnija boja granica */
-}
-
-.dark-mode a {
-    color: #fff; /* Promijenjena boja linkova u tamnom režimu */
-    background-color: #333; /* Tamnija pozadina za linkove u tamnom režimu */
-}
-
-.dark-mode a:hover {
-    background-color: #444; /* Tamnija pozadina na hover u tamnom režimu */
-}
-
-.dark-mode h1 {
-    color: #fff; /* Promijenjena boja naslova */
-}
-
-/* Dodatni stilovi za dugme za prebacivanje na tamni režim */
-.dark-mode-toggle {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    background: transparent;
-    border: none;
-    font-size: 24px;
-    cursor: pointer;
-    color: #000;
-    z-index: 1000;
-    transition: color 0.3s ease; /* Dodajemo animaciju za promjenu boje teksta */
-}
-
-.dark-mode-toggle:hover {
-    color: #666;
+.link-box a {
+    color: #ddd; /* Sivo slova */
+    text-decoration: none; /* Isključujemo podvučenu liniju */
 }
