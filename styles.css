@@ -48,18 +48,39 @@ footer {
     margin-top: 50px; /* Povećavamo razmak između programa i dugmeta */
 }
 
-#chat-button {
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color: #4CAF50; /* Zelena boja */
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    text-decoration: none;
+.button-container {
+    display: flex;
+    justify-content: center;
 }
 
-#chat-button:hover {
-    background-color: #45a049; /* Tamnija nijansa zelene boje na hover */
+.chat-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    text-decoration: none;
+    margin-right: 10px; /* Dodajemo razmak između dugmadi */
+}
+
+.chat-button:last-child {
+    margin-right: 0; /* Uklanjamo marginu s desne strane posljednjeg dugmeta */
+}
+
+.chat-button-green {
+    background-color: #4CAF50; /* Zelena boja */
+}
+
+.chat-button-blue {
+    background-color: #0074D9; /* Plava boja */
+}
+
+.chat-button-purple {
+    background-color: #B10DC9; /* ljubicasta boja */
+}
+
+.chat-button:hover {
+    transform: translateY(-3px);
 }
