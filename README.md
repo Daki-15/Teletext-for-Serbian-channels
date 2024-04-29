@@ -16,7 +16,7 @@ The CSS file (`styles.css`) provides the styling for the web page. It includes s
 
 ## Usage
 
-To view the web page, open the `index.html` file in a web browser. You will see a list of TV programs. Click on a program to view its details.
+To view the web page, open the `index.html` file in a web browser. You will see a list of TV programs. Click on a program to view its details. (Link of web page: http://gde-gledati-film.great-site.net/?i=1)
 
 ## Customization
 
